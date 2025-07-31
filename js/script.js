@@ -26,6 +26,7 @@ Complete your resource-object that will store the dynamic content.
 Resource object should 3 sub-objects. Give your sub-objects
 meaningful names. Every sub-object should have the following
 properties headingContent, bodyText, imgUrl and imgAlt. */
+
 const resourceObject = {
     researchFunding: {
         headingContent: "Enable Green Research & Funding",
@@ -105,15 +106,16 @@ function handleSelection(event) {
     Assign this content to to your HTML-container that will 
     be dynamically loaded (you already got the reference to 
     this container before you started the function handleSelection) */ 
+
     const clickedButton = event.target.closest('a');
     let selectedContent;
     
     if (clickedButton === buttons[0]) {
         selectedContent = resourceObject.researchFunding;
     } else if (clickedButton === buttons[1]) {
-        selectedContent = resourceObject. expandUpgrade;
+        selectedContent = resourceObject.expandUpgrade;
     } else if (clickedButton === buttons[2]) {
-        selectedContent = resourceObject. modernEnergy;
+        selectedContent = resourceObject.modernEnergy;
     }
     
     contentContainer.innerHTML = `
@@ -123,8 +125,7 @@ function handleSelection(event) {
     `;
 }
 
-/* 
-Close your handleSelection function here. */
+
 
 /* 
 Register all buttons to click event. The event-handler handleSelection will listen 
