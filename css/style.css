@@ -112,7 +112,7 @@ nav {
 
 .tagline {
     
-     font-family: "Noto Sans", sans-serif;
+    
     color: var(--accent-cream);
     font-size: 2rem;
     font-weight: 700;
@@ -121,6 +121,7 @@ nav {
 }
 
 .mh-container h3 {
+     font-family: "Noto Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     max-width: 40rem;
