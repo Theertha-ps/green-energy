@@ -111,7 +111,8 @@ nav {
 
 
 .tagline {
-
+    
+     font-family: "Noto Sans", sans-serif;
     color: var(--accent-cream);
     font-size: 2rem;
     font-weight: 700;
